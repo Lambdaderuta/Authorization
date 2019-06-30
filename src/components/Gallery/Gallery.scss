@@ -1,0 +1,41 @@
+.gallery {
+    display: flex;
+    justify-content: center;
+	height: 80%;
+	width: 60%;
+
+	&__selected-image {
+		display: flex;
+		height: 32rem;
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__image-set {
+		display: flex;
+		cursor: pointer;
+	}
+
+	&__active {
+		border-style: solid;
+	}
+
+	&__arrow-box-right {
+		position: absolute;
+		top: 18rem;
+		right: 40rem;
+		cursor: pointer;
+		height: 2rem;
+		width: 2rem;
+	}
+
+	&__arrow-box-left {
+		@extend .gallery__arrow-box-right;
+		right: 0;
+		left: 10rem;
+		transform: rotate(180deg);
+	}
+}

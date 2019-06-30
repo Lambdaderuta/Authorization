@@ -1,0 +1,11 @@
+.home-page {
+    &__toolbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+    }
+}
